@@ -1,8 +1,6 @@
-import random
 import streamlit as st
+from dice_roller import show_dice_roller
 
 st.title("DnD Tool")
 
-if st.button("Roll a 20-Sided Die"):
-    roll = random.randint(1,20)
-    st.success(f"You rolled {roll}!")
+show_dice_roller()
